@@ -168,7 +168,7 @@ class MpvPlayer:
         self._send("set_property", "speed", self.speed)
 
     def set_video(self, on):
-\
+
                                                                                                
         self.video_on = bool(on)
         self._send("set_property", "vid", "auto" if on else "no")
