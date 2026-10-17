@@ -80,8 +80,8 @@ Make sure you have `git`, `python3`, `ffmpeg`, and `mpv` installed on your machi
 Clone the repository and run the setup script (from default, arch, debian and fedora are supported.:
 
 ```bash
-git clone https://github.com/sxmplyfarhan/Clip-Command.git
-cd Clip-Command
+git clone https://github.com/sxmplyfarhan/sxmply.git
+cd sxmply
 chmod +x install.sh
 ./install.sh
 ```
