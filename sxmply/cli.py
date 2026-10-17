@@ -1,7 +1,4 @@
-\
-\
-\
-\
+
    
 import difflib
 import importlib

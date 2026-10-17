@@ -70,7 +70,7 @@ def find_tracks(paths, recursive=True):
 
 
 def read_tags(track):
-\
+
                                                                 
     try:
         import mutagen

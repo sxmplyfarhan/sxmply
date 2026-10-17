@@ -5,7 +5,7 @@ import sys
 
 from .. import config, ui
 
-EPILOG = """\
+EPILOG = """
 examples:
   sxmply music                         play your music folder
   sxmply music ~/Music/Jazz            play a folder (sub-folders included)

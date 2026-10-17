@@ -1,9 +1,3 @@
-\
-\
-\
-\
-\
-\
    
 import json
 import os

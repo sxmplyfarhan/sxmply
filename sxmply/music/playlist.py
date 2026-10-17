@@ -47,7 +47,7 @@ class Queue:
         return self.repeat
 
     def advance(self, auto=False):
-\
+
                                                                                               
         if not self.order:
             return None

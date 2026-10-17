@@ -1,21 +1,4 @@
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-   
+
 import base64
 import concurrent.futures
 import fcntl
@@ -56,8 +39,7 @@ def truecolor():
 
 
 def _probe(fd, timeout=0.5):
-\
-\
+
                                                                         
     sys.stdout.write("\033_Gi=31,s=1,v=1,a=q,t=d,f=24;AAAA\033\\\033[c")
     sys.stdout.flush()
@@ -228,7 +210,7 @@ def ascii_lines(rgb, cols, rows):
 
 
 def kitty_payload(rgb, px_w, px_h, cols, rows):
-\
+
                                                                                    
     data = base64.standard_b64encode(rgb).decode("ascii")
     chunks = [data[i:i + 4096] for i in range(0, len(data), 4096)] or [""]
