@@ -1,13 +1,4 @@
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
+
    
 import json
 import os
@@ -48,7 +39,7 @@ def _strip_noise(text):
 
 
 def guess_tags(info):
-\
+
                                                                                         
     title = _strip_noise(info.get("track") or info.get("title") or "")
     artist = (info.get("artist") or info.get("creator") or "").strip()
