@@ -1,6 +1,6 @@
 <div align="center">
 
-# ♪ sxmply
+# sxmply
 
 **A modern, lightning-fast suite of command-line audio tools.**  
 *Download anything with embedded tags & lyrics, then play it in a full-featured terminal dashboard.*
@@ -31,14 +31,6 @@
 
 <br>
 
-<div align="center">
-
-| Table Layout & Cover Art | Live Synced Lyrics (`l`) |
-|:---:|:---:|
-| *(Structured columns for `#`, Title, Artist, Album, Year, Length & Favorite)* | *(Real-time active line highlighting `▶` with auto-scroll and timestamps)* |
-
-</div>
-
 ---
 
 ## ✨ Features
@@ -61,8 +53,7 @@
 ---
 
 ### 🎵 `sxmply clip`
-- **Any Site Supported:** YouTube, Spotify links, SoundCloud, Bandcamp, TikTok, Vimeo, and 1000+ sites supported by `yt-dlp`.
-- **No Spotify Login Required:** Automatically resolves public Spotify playlists, albums, and tracks to highest-quality YouTube audio streams.
+- **Any Site Supported:** YouTube, Spotify links are completly supported but other sites will probably work unless they require cookies.
 - **Automatic Tagging & Cover Art:** Automatically writes title, artist, album, and release year into the file, and crops thumbnails into square cover art.
 - **Clean Lyrics Storage:** Synchronized lyrics are written into audio tags and backed up inside a hidden `.lyrics/` folder, keeping your music directory free from loose `.lrc` clutter.
 - **Format Choices:** Audio (`mp3`, `m4a`, `opus`, `flac`, `wav`) or Video (`mp4`, `mkv`, `webm`) with selectable bitrates and resolutions.
@@ -71,9 +62,8 @@
 
 ## 💻 Supported Platforms
 
-- **Linux:** Ubuntu, Debian, Fedora, Arch Linux, Void, openSUSE, Alpine.
-- **macOS:** Tested on macOS Ventura, Sonoma, and Sequoia (Apple Silicon & Intel).
-- *(Windows support for `sxmply music` is planned via WSL2).*
+Theoretically any platform is supported, you just need to install the right prerequesties.
+Just make sure to have git,python3,ffmeg,mpv installed and than run the install.sh
 
 ---
 
@@ -82,27 +72,6 @@
 ### 1. Prerequisites
 
 Make sure you have `git`, `python3`, `ffmpeg`, and `mpv` installed on your machine:
-
-**Debian / Ubuntu / Pop!_OS:**
-```bash
-sudo apt update
-sudo apt install -y git python3 python3-venv ffmpeg mpv
-```
-
-**Fedora / RHEL:**
-```bash
-sudo dnf install -y git python3 ffmpeg mpv
-```
-
-**Arch Linux:**
-```bash
-sudo pacman -S --needed git python ffmpeg mpv
-```
-
-**macOS (via Homebrew):**
-```bash
-brew install git python ffmpeg mpv
-```
 
 ---
 
@@ -125,7 +94,7 @@ Everything installs cleanly into your user home directory:
 > **Tip:** If `sxmply` is not recognized after install, ensure `~/.local/bin` is in your `PATH`:
 > ```bash
 > echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc # or ~/.zshrc
-> source ~/.bashrc
+> source ~/.bashrc # or ~/.zshrc
 > ```
 
 * **Update:** Re-run `./install.sh` (this also keeps `yt-dlp` up to date).
