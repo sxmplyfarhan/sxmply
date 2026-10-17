@@ -64,8 +64,7 @@ def _fail(msg):
 
 
 def choose_settings(args, spotify=False):
-\
-\
+
                                                                            
     interactive = sys.stdin.isatty() and not args.y
     last = config.get("clip_last") or {}
