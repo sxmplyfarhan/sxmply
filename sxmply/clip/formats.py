@@ -67,7 +67,7 @@ def choose_settings(args, spotify=False):
 
                                                                            
     interactive = sys.stdin.isatty() and not args.y
-    last = config.get("clip_last") or {}
+    last = config.get("last_choices", tool="clip") or {}
 
                              
     if spotify or args.a:
@@ -126,7 +126,7 @@ def choose_settings(args, spotify=False):
     if args.D:
         save_path = config.resolve_dir(args.D)
     else:
-        home = config.get("clip_dir")
+        home = config.get("download_dir", tool="clip")
         default_dir = home or os.getcwd()
         if interactive:
             print()
@@ -138,7 +138,7 @@ def choose_settings(args, spotify=False):
 
     settings = Settings(audio=audio, fmt=fmt, quality=quality, save_path=save_path,
                         lyrics=not getattr(args, "no_lyrics", False))
-    config.set("clip_last", {"audio": audio, "fmt": fmt, "quality": quality})
+    config.set("last_choices", {"audio": audio, "fmt": fmt, "quality": quality}, tool="clip")
     if interactive:
         ui.info(f"{settings.describe()}  →  {settings.save_path}")
     return settings
