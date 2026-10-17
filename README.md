@@ -77,7 +77,7 @@ Make sure you have `git`, `python3`, `ffmpeg`, and `mpv` installed on your machi
 
 ### 2. Install `sxmply`
 
-Clone the repository and run the setup script:
+Clone the repository and run the setup script (from default, arch, debian and fedora are supported.:
 
 ```bash
 git clone https://github.com/sxmplyfarhan/Clip-Command.git
