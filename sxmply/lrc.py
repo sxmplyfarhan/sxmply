@@ -1,12 +1,4 @@
-\
-\
-\
-\
-\
-\
-\
-\
-\
+
    
 import bisect
 import re
