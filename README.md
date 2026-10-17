@@ -2,8 +2,8 @@
 
 # sxmply
 
-**A modern, lightning-fast suite of command-line audio tools.**  
-*Download anything with embedded tags & lyrics, then play it in a full-featured terminal dashboard.*
+**Customized useful tools used by sxmplyfarhan and perfectioned for you :3**  
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform: Linux | macOS](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-teal.svg)](#-supported-platforms)
