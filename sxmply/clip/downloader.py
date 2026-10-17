@@ -26,7 +26,12 @@ def build_opts(settings):
         "outtmpl": os.path.join(settings.save_path, "%(title)s.%(ext)s"),
         "quiet": True,
         "no_warnings": True,
-        "writethumbnail": True,                                                            
+        "writethumbnail": True,
+        "extractor_args": {
+            "youtube": {
+                "player_client": ["android", "ios"]
+            }
+        },
     }
     embed_cover = settings.fmt in metadata.EMBED_COVER
     pps = [
@@ -104,6 +109,11 @@ def get_playlist_info(link):
         "total": len(entries),
         "titles": [e.get("title") or "(untitled)" for e in entries[:5]],
         "entries": entries,
+        "extractor_args": {
+            "youtube": {
+                "player_client": ["android", "ios"]
+            }
+        },
     }
 
 
