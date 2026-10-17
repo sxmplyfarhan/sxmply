@@ -28,7 +28,7 @@
 
 <div align="center">
   <img src="images/image.png" alt="Alt Text" width="900">
-  <img src="images/image1.png" alt="Alt Text" width="500">
+  <img src="images/image1.png" alt="Alt Text" width="900">
 </div>
 
 <br>
