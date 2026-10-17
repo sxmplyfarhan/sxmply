@@ -3,6 +3,7 @@
 # sxmply
 
 **Customized useful tools used by sxmplyfarhan and perfectioned for you :3**  
+*This repository originates from my old clip-command, it has been completly modified and will continue to be updated.*
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
