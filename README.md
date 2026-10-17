@@ -27,7 +27,8 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img width="900" alt="sxmply-banner" src="https://github.com/user-attachments/assets/460797d2-3600-46f1-810b-bb6b77da5902" />
+  <img src="images/image.png" alt="Alt Text" width="500">
+  <img src="images/image1.png" alt="Alt Text" width="500">
 </div>
 
 <br>
